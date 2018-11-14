@@ -1,0 +1,21 @@
+<?php 
+// To generate calendar's ids array uncoment this snippet and run the script, after this comment again
+// while(true) {
+//   foreach ($calendarList->getItems() as $calendarListEntry) {
+//     echo $calendarListEntry->getId() . ' - ' .  $calendarListEntry->getSummary() . PHP_EOL;
+//     echo '---------------------------------------------------------' . PHP_EOL;  
+//   }
+//   $pageToken = $calendarList->getNextPageToken();
+//   if ($pageToken) {
+//     $optParams = array('pageToken' => $pageToken);
+//     $calendarList = $service->calendarList->listCalendarList($optParams);
+//   } else {
+//     break;
+//   }
+// }
+// die();
+
+// calendars[calendar_name] = 'calendar_id'
+$calendars['your@gmail.com'] = 'your@gmail.com';
+
+$calendarId = $calendars['your@gmail.com'];

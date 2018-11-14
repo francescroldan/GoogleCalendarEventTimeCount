@@ -86,7 +86,7 @@ $calendarList = $service->calendarList->listCalendarList();
       'timeMax' => $dateMax->format('c')
     );
 
-    printf("Date from %s to %s \n", $dateMin->format("d-m-Y | h:i:sa"), $dateMax->format("d-m-Y | h:i:sa"));
+    printf("Date from %s to %s \n", $dateMin->format("d-m-Y h:i:sa"), $dateMax->format("d-m-Y h:i:sa"));
 
     $results = $service->events->listEvents($calendarId, $optParams);
     $events = $results->getItems();
